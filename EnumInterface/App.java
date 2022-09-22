@@ -65,7 +65,6 @@ public class App {
 			}
 			@Override
 			public String getName() {
-				// TODO 自動生成されたメソッド・スタブ
 				return "愛城 華恋";
 			}
 		},
