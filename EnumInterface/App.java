@@ -8,7 +8,7 @@ public class App {
 		BLACK(){
 			@Override
 			public String apply(String _s) {
-				return "<span class=\"color:black;\">" + _s + "</span>";
+				return String.format(span, "color:black;", _s);
 			}
 			@Override
 			public String getName() {
@@ -81,6 +81,10 @@ public class App {
 	}
 	
 	public static void main(String[] args) {
+		
+		CharacterInterface karen = Starlight.KAREN;
+		System.out.println(karen == Starlight.KAREN);
+		
 		for (CharacterInterface character : Lycoris.values()) {
 			System.out.println(character.apply(character.getName()));
 		}
